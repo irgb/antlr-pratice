@@ -11,10 +11,10 @@ public class Main {
         InputStream is = System.in;
         if (inputFile!=null ) is = new FileInputStream(inputFile);
         ANTLRInputStream input = new ANTLRInputStream(is);
+
         CalculatorLexer lexer = new CalculatorLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         //System.out.println(tokens.getText());
-
         CalculatorParser parser = new CalculatorParser(tokens);
         ParseTree tree = parser.expr(); // parse
 

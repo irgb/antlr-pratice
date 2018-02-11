@@ -6,6 +6,9 @@ expr: expr op=('*'|'/') expr # MulDiv
     | '('expr')'             # Parens
     ;
 
+comment
+    : '#' ~('\r'|'\n')*
+    ;
 INT: [0-9]+ ;
 MUL: '*' ;
 DIV: '/' ;
