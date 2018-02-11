@@ -18,4 +18,4 @@ java -classpath "./bin:$CLASSPATH" MainListener data.txt
 
 ### Reference
 - [ANTLR4 calculator examples](https://github.com/ouyi/antlr4calc)
--[comment in antlr rules](https://stackoverflow.com/a/7074214/5432806)
+- [comment in antlr rules](https://stackoverflow.com/a/7074214/5432806)
